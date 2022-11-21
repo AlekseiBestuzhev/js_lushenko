@@ -29,11 +29,12 @@ alert(2019 - 200);
 
 // Task 6.
 // Создайте на странице div с id=one. С помощью document.getElementById запишите в данный элемент текст 'Hello World'.
-
+document.getElementById('one').innerHTML = 'Hello World';
 
 
 // Task 7.
 // Создайте на странице div с id=two. С помощью document.getElementById запишите в данный элемент результат умножения 12 на 12. Умножение можно сделать с помощью знака звездочки ( цифра 8).
+document.getElementById('two').innerHTML = 12 * 12;
 
 
 // Task 8.
