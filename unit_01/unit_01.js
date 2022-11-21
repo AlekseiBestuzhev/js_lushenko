@@ -119,4 +119,4 @@ console.log(divS3);
 
 // Task 20
 // Получите c помощью querySelector тег body. С помощью innerHTML присвойте ему пустую строку (...innerHTML = ''). Изучите что произошло. Закомментируйте этот код.
-document.querySelector('body').innerHTML = ' ';
+// document.querySelector('body').innerHTML = ' ';
