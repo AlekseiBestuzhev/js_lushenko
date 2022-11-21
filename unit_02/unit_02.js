@@ -35,19 +35,22 @@ document.querySelector('.out-5').textContent = e2 / f2;
 // Создайте две переменные e3 = 3 и f3 = 'Hello'. Выведите на страницу  в .out-6 результат сложения двух переменных.
 let e3 = 3;
 let f3 = 'Hello';
+// console.log(e3*f3);
 document.querySelector('.out-6').textContent = e3 + f3;
 // document.querySelector('.out-6').textContent = 
 
 // Task 7.
 // Создайте две переменные e4 = 3 и f4 = 'Hello'. Выведите на страницу  в .out-7 результат умножения двух переменных.
-
+let e4 = 3;
+let f4 = 'Hello';
+document.querySelector('.out-7').textContent = e4 * f4;
 // document.querySelector('.out-7').textContent = 
 
 // Task 8.
 // Создайте input и кнопку. По нажатию на кнопку выполняется функция, которая выводит в консоль то, что пользователь ввел в input.
-
+let inputIn = document.querySelector('.in-8');
 function t8() {
-
+	document.querySelector('.out-8').textContent = inputIn.value;
 }
 
 document.querySelector('.b-8').onclick = t8;
