@@ -70,10 +70,16 @@ a.innerHTML = 3.1415;
 // Создайте div с классом seven. Получите его в переменную div7. С помощью innerHTML запишите в него строку:
 // <img src="https://cdn4.iconfinder.com/data/icons/food-and-drink-flat-gradient/32/cone_ice_cream_food_drink_sweet-512.png" alt="">
 //Обратите внимание. Вам придется вставить строку, которая уже содержит кавычки. Главное чтобы кавычки чередовались. Поэтому при вставке оберните данную строку одинарными кавычками.
+let div7 = document.querySelector('.seven');
+div7.innerHTML = '<img src="https://cdn4.iconfinder.com/data/icons/food-and-drink-flat-gradient/32/cone_ice_cream_food_drink_sweet-512.png" alt="">';
 
 
 // Task 14.
 //Создайте две переменных z1 = 6, z2 = 3. Создайте div, класс присвойте самостоятельно и выведите в него умножение z1 на z2.
+let z1 = 6;
+let z2 = 3;
+document.querySelector('.out-14').innerHTML = z1 * z2;
+
 
 // Task 15.
 // Создайте две переменных y1 = 6, y2 = 3. Создайте div, класс присвойте самостоятельно, выведите в него деление y1 на y2.
