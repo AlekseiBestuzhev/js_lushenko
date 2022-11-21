@@ -22,16 +22,20 @@ document.querySelector('.out-3').textContent = e + f;
 // Создайте две переменные e1 = '3' и f1 = 5. Выведите на страницу  в .out-4 результат сложения e1 + f1. Объясните разницу.
 let e1 = '3';
 let f1 = 5;
-document.querySelector('.out-4').textContent = e1 + f1; // 
+document.querySelector('.out-4').textContent = e1 + f1; // todo дело в ковычках - строка
 
 // Task 5.
 // Создайте две переменные e2 = 3 и f2 = 0. Выведите на страницу  в .out-5 результат деления e2 на f2.
-
+let e2 = 3;
+let f2 = 0;
+document.querySelector('.out-5').textContent = e2 / f2;
 // document.querySelector('.out-5').textContent = 
 
 // Task 6.
 // Создайте две переменные e3 = 3 и f3 = 'Hello'. Выведите на страницу  в .out-6 результат сложения двух переменных.
-
+let e3 = 3;
+let f3 = 'Hello';
+document.querySelector('.out-6').textContent = e3 + f3;
 // document.querySelector('.out-6').textContent = 
 
 // Task 7.
