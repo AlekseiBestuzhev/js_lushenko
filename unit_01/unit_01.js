@@ -46,16 +46,18 @@ document.querySelector('.one').innerHTML = 'Hello World';
 // Создайте следующую верстку на странице:
 //<h2>Hello <span>everyone</span></h2>
 // Замените с помощью querySelector текст everyone на world.
-document.querySelector('span').innerHTML = 'World';
+document.querySelector('span').innerHTML = 'World'; // реагирует на первый в коде тэг или класс
 
 
 // Task 10.
 //Создайте пустой div c классом three. С помощью querySelector запишите внутрь div заголовок h3 с произвольным текстом.
+document.querySelector('.three').innerHTML = '<h3>Some text</h3>';
 
 
 // Task 11.
 // Создайте пустой div c классом four. С помощью querySelector запишите внутрь div заголовок h4 с произвольным текстом и параграф p с произвольным текстом. Подсказка, чтобы дописывать внутрь элемента используейте не innerHTML = , а innerHTML += (плюс равно без пробела).
-
+document.querySelector('.four').innerHTML = '<h4>Some text</h4>';
+document.querySelector('.four').innerHTML += '<p>some different text</p>';
 
 
 // Task 12.
