@@ -84,14 +84,14 @@ document.querySelector('.out-14').innerHTML = z1 * z2;
 // Task 15.
 // Создайте две переменных y1 = 6, y2 = 3. Создайте div, класс присвойте самостоятельно, выведите в него деление y1 на y2.
 let y1 = 6,
-    y2 = 3;
+	y2 = 3;
 document.querySelector('.out-15').innerHTML = y1 / y2;
 
 
 // Task 16.
 // Создайте две переменные x1='Hello', x2 = 5. Создайте div, класс присвойте самостоятельно, выведите в него сумму x1 + x2. Изучите результат операции.
 let x1 = 'Hello',
-    x2 = 5;
+	x2 = 5;
 document.querySelector('.out-16').innerHTML = x1 + x2;
 
 
@@ -111,6 +111,12 @@ console.log(d2);
 
 // Task 19.
 // Создайте div c классом s3 и div с классом s4. Получите div.s3 в переменную divS3. Выведите в консоль divS3. Теперь получите в эту же переменную divS3 блок div c классом s4. Выведите переменную divS3 в консоль. Изучите что изменилось.
+let divS3 = document.querySelector('.s3');
+console.log(divS3);
+divS3 = document.querySelector('.s4');
+console.log(divS3);
+
 
 // Task 20
 // Получите c помощью querySelector тег body. С помощью innerHTML присвойте ему пустую строку (...innerHTML = ''). Изучите что произошло. Закомментируйте этот код.
+document.querySelector('body').innerHTML = ' ';
