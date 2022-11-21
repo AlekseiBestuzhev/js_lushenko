@@ -9,18 +9,20 @@ console.log(a * b);
 let c = 7;
 let d = 9;
 document.querySelector('.out-2').innerHTML = c / d;
-
+// todo я увидел, сначала сделал так, а потом по-старому, посмотреть в чем разница.
 // document.querySelector('.out-2').textContent = 
 
 // Task 3.
 // Создайте две переменные e = 3 и f = 5. Выведите на страницу  в .out-3 результат сложения e + f.
-
-// document.querySelector('.out-3').textContent = 
+let e = 3;
+let f = 5;
+document.querySelector('.out-3').textContent = e + f;
 
 // Task 4.
 // Создайте две переменные e1 = '3' и f1 = 5. Выведите на страницу  в .out-4 результат сложения e1 + f1. Объясните разницу.
-
-// document.querySelector('.out-4').textContent = 
+let e1 = '3';
+let f1 = 5;
+document.querySelector('.out-4').textContent = e1 + f1; // 
 
 // Task 5.
 // Создайте две переменные e2 = 3 и f2 = 0. Выведите на страницу  в .out-5 результат деления e2 на f2.
