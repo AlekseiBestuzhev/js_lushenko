@@ -39,13 +39,14 @@ document.getElementById('two').innerHTML = 12 * 12;
 
 // Task 8.
 // Создайте div с классом one. С помощью document.querySelector запишите в данный элемент текст 'Hello World'.
+document.querySelector('.one').innerHTML = 'Hello World';
 
 
 // Task 9.
 // Создайте следующую верстку на странице:
 //<h2>Hello <span>everyone</span></h2>
 // Замените с помощью querySelector текст everyone на world.
-
+document.querySelector('span').innerHTML = 'World';
 
 
 // Task 10.
