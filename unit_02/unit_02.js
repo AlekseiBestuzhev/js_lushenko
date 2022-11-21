@@ -1,8 +1,14 @@
 // Task 1.
 // Создайте две переменные a = 7 и b = 9. Выведите в консоль результа умножения a на b.
+let a = 7;
+let b = 9;
+console.log(a * b);
 
 // Task 2.
 // Создайте две переменные c = 7 и d = 9. Выведите на страницу в .out-2 результат деления c на d.
+let c = 7;
+let d = 9;
+document.querySelector('.out-2').innerHTML = c / d;
 
 // document.querySelector('.out-2').textContent = 
 
