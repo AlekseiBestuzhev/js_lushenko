@@ -95,9 +95,10 @@ document.querySelector('.b-12').onclick = t12;
 
 // Task 13.
 // Создайте два input и кнопку. В input пользователь вводит числа. При нажатии кнопки выполняется функция, которая выводит сумму данных двух чисел на страницу в .out-13.
-
+let inputIn131 = document.querySelector('.i-13_1');
+let inputIn132 = document.querySelector('.i-13_2');
 function t13() {
-
+	document.querySelector('.out-13').textContent = +inputIn131.value + +inputIn132.value;
 }
 
 document.querySelector('.b-13').onclick = t13;
@@ -105,7 +106,7 @@ document.querySelector('.b-13').onclick = t13;
 // Task 14.
 // Создайте input .i-14 и пропишите ему в html value = 77. С помощью JS измените value на 'Hello'.
 
-// document.querySelector('.i-14').value = 
+document.querySelector('.i-14').value = 'Hello';
 
 // Task 15.
 // Создайте input i-15 и получите его в переменную y. В js выполните следующее присвоение: y.style.border = '2px solid red' . Изучите результат операции.
