@@ -76,18 +76,19 @@ document.querySelector('.b-10').onclick = t10;
 
 // Task 11.
 // Создайте input и кнопку. По нажатию на кнопку выполняется функция, которая выводит на страницу в .out-11 число, которое ввел пользователь и к нему добавленное число 10.
-
+let inputIn11 = document.querySelector('.i-11');
 function t11() {
-
+	document.querySelector('.out-11').textContent = +inputIn11.value + 10;
 }
 
 document.querySelector('.b-11').onclick = t11;
 
 // Task 12.
 // Создайте два input (i-12_1 и i-12-2) и кнопку. В первый input пользователь вводит имя, во второе фамилию. При нажатии кнопки выполняется функция, которая выводит в .out-12 строку 'Hello имя фамилия', где имя - имя пользователя и фамилия - введенная фамилия.
-
+let inputIn121 = document.querySelector('.i-12_1');
+let inputIn122 = document.querySelector('.i-12_2');
 function t12() {
-
+	document.querySelector('.out-12').textContent = 'Hello ' + inputIn121.value + ' ' + inputIn122.value;
 }
 
 document.querySelector('.b-12').onclick = t12;
