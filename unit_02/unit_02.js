@@ -111,14 +111,15 @@ document.querySelector('.i-14').value = 'Hello';
 // Task 15.
 // Создайте input i-15 и получите его в переменную y. В js выполните следующее присвоение: y.style.border = '2px solid red' . Изучите результат операции.
 
-// let y = 
-// y.style.border = 
+let y = document.querySelector('.i-15');
+y.style.border = '2px solid red';
 
 // Task 16.
 // Создайте два input type=number, куда пользователь может ввести числа. Выведите на страницу сумму данных чисел по нажатию кнопки b-16
-
+let inputIn161 = document.querySelector('.i-16-1');
+let inputIn162 = document.querySelector('.i-16-2');
 function t16() {
-
+	document.querySelector('.out-16').innerHTML = +inputIn161.value + +inputIn162.value;
 }
 
 document.querySelector('.b-16').onclick = t16;
