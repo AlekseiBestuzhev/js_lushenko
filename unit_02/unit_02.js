@@ -128,8 +128,8 @@ document.querySelector('.b-16').onclick = t16;
 // Создайте input type="text" куда пользователь может ввести строку и число. Создайте функцию, которая запускается по нажатию на кнопку. Получите значение из input в переменную t. А затем сделайте операцию t = parseInt(t), и результат операции выведите в out-17. Прочитайте за эту операцию. Попробуйте по очереди вводить 44, 44aaa, 44.3, a45 . Изучите вывод.
 
 function t17() {
-
-
+	const t = document.querySelector('.i-17').value;
+	document.querySelector('.out-17').textContent = parseInt(t);
 }
 
 document.querySelector('.b-17').onclick = t17;
@@ -138,7 +138,8 @@ document.querySelector('.b-17').onclick = t17;
 // Создайте input type="text" куда пользователь может ввести строку и число. Создайте функцию, которая запускается по нажатию на кнопку. Получите значение из input в переменную t. А затем сделайте операцию t = parseFloat(t), и результат операции выведите в консоль. Прочитайте за эту операцию. Попробуйте по очереди вводить 44, 44aaa, 44.3, a45 . Изучите вывод.
 
 function t18() {
-
+	const t = document.querySelector('.i-18').value;
+	console.log(parseFloat(t));
 }
 
 document.querySelector('.b-18').onclick = t18;
