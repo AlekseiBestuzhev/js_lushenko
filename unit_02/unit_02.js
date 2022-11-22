@@ -67,9 +67,9 @@ document.querySelector('.b-9').onclick = t9;
 
 // Task 10.
 // Создайте input и кнопку. По нажатию на кнопку выполняется функция, которая выводит на страницу число, которое ввел пользователь умноженное на 10.
-
+let inputIn10 = document.querySelector('.i-10');
 function t10() {
-
+	document.querySelector('.out-10').textContent = inputIn10.value * 10;
 }
 
 document.querySelector('.b-10').onclick = t10;
