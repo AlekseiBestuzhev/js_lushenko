@@ -57,9 +57,10 @@ document.querySelector('.b-8').onclick = t8;
 
 // Task 9.
 // Создайте input и кнопку. По нажатию на кнопку выполняется функция, которая выводит на страницу,  что пользователь ввел в input. Добавьте очистку input после нажатия кнопки.
-
+let inputIn9 = document.querySelector('.i-9');
 function t9() {
-
+	document.querySelector('.out-9').textContent = inputIn9.value;
+	inputIn9.value = '';
 }
 
 document.querySelector('.b-9').onclick = t9;
