@@ -148,7 +148,9 @@ document.querySelector('.b-18').onclick = t18;
 // Создайте два input type=number, куда пользователь может ввести отрицательные числа. Выведите на страницу сумму данных чисел. Мы это делали! Зачем? Затем, что нужно понимать как влияет перевод в число с помощью + и parseInt на отрицательные числа!!!
 
 function t19() {
-
+	const inputIn191 = document.querySelector('.i-19-1').value;
+	const inputIn192 = document.querySelector('.i-19-2').value;
+	document.querySelector('.out-19').textContent = +inputIn191 + +inputIn192;
 }
 
 document.querySelector('.b-19').onclick = t19;
@@ -157,7 +159,11 @@ document.querySelector('.b-19').onclick = t19;
 // Создайте опросник, куда пользователь может ввести имя, фамилию, возраст, род занятий. И кнопку. По нажатию кнопки выведите на страницу предложение 'Уважаемый Иван, Иванов, ваш возраст 33 года, по професси вы ...' куда поставьте соответствующие данные из inputов.
 
 function t20() {
-
+	const in201 = document.querySelector('.i-20-1').value;
+	const in202 = document.querySelector('.i-20-2').value;
+	const in203 = document.querySelector('.i-20-3').value;
+	const in204 = document.querySelector('.i-20-4').value;
+	document.querySelector('.out-20').textContent = 'Dear ' + in201 + ' ' + in202 + '. Your age is ' + in203 + '. You are ' + in204 + '.';
 }
 
 document.querySelector('.b-20').onclick = t20;
