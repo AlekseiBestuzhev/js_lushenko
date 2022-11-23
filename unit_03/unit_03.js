@@ -2,7 +2,13 @@
 // При нажатии кнопки b-1 срабатывает функция f1. Функция должна прочитать содержимое i-1 и сравнить его с числом 4 (сравнение ==). Результат сравнения - true или false выведите в out-1.
 
 function f1() {
-
+	const in1 = +document.querySelector('.i-1').value;
+	if (in1 == 4) {
+		document.querySelector('.out-1').textContent = true;
+	}
+	else {
+		document.querySelector('.out-1').textContent = false;
+	}
 }
 
 document.querySelector('.b-1').onclick = f1;
@@ -13,9 +19,14 @@ document.querySelector('.b-1').onclick = f1;
 
 let a21 = 45;
 let a22 = 32;
-
+const out2 = document.querySelector('.out-2');
 function f2() {
-
+	if (a21 > a22) {
+		out2.textContent = a21;
+	}
+	else {
+		out2.textContent = a22;
+	}
 }
 
 document.querySelector('.b-2').onclick = f2;
@@ -147,6 +158,5 @@ function f15() {
 }
 
 document.querySelector('.b-15').onclick = f15;
-
 
 
