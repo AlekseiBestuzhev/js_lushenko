@@ -213,7 +213,8 @@ document.querySelector('.b-12').onclick = f12;
 // Дан input i-130. В отличие от предыдущего задания - input type number. По нажатию кнопки получите значение из input  в переменную, а затем выведите в out-13 typeof полученной переменной. Typeof позволяет определить тип данных. Если вы правильно все сделали - то удивительно, но тип данных будет string! Подумайте почему так?
 
 function f13() {
-
+	const inp = document.querySelector('.i-130').value;
+	document.querySelector('.out-13').textContent = (typeof inp);
 }
 
 document.querySelector('.b-13').onclick = f13;
@@ -223,6 +224,24 @@ document.querySelector('.b-13').onclick = f13;
 // Дан input i-141 и input-142, type=number.  Дан select s-143, который содержит две операции - +, -, *, / . Дана кнопка b-14, при нажатии на которую срабатывает функция f14. Функция выводит в out-14 результат операций выбранной в 3-м select к числам введенным в первом и втором input. Например выбрано 1 13 +, нужно вывести результат операции 1+13 т.е.  14.
 
 function f14() {
+	const inp1 = +document.querySelector('.i-141').value;
+	const inp2 = +document.querySelector('.i-142').value;
+	const sel = document.querySelector('.s-143').value;
+	const out = document.querySelector('.out-14');
+	switch (sel) {
+		case '+':
+			out.textContent = inp1 + inp2;
+			break;
+		case '-':
+			out.textContent = inp1 - inp2;
+			break;
+		case '*':
+			out.textContent = inp1 * inp2;
+			break;
+		case '/':
+			out.textContent = inp1 / inp2;
+			break;
+	}
 
 }
 
