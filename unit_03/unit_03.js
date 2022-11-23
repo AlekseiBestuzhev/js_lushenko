@@ -163,7 +163,24 @@ document.querySelector('.b-9').onclick = f9;
 // Дан select s-100. По нажатию кнопки, выведите value выбранного option в out-10.
 
 function f10() {
-
+	const sel = +document.querySelector('.s-100').value;
+	const out = document.querySelector('.out-10');
+	// ! Я так понимаю это задание с уловкой
+	// switch (sel) {
+	// 	case 6:
+	// 		out.textContent = 6; 
+	// 		break;
+	// 	case 7:
+	// 		out.textContent = 7;
+	// 		break;
+	// 	case 11:
+	// 		out.textContent = 11;
+	// 		break;
+	// 	case 9:
+	// 		out.textContent = 9;
+	// 		break;
+	// }
+	out.textContent = sel;
 }
 
 document.querySelector('.b-10').onclick = f10;
