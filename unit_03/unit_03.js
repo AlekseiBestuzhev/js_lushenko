@@ -104,7 +104,10 @@ document.querySelector('.b-6').onclick = f6;
 // Даны 2 input - i-71 и i-72, оба - input[type=number]. При нажатии кнопки b-7 срабатывает функция f7. Функция должна число из i-71 возвести в степень i-72, вывести результат в  out-7. Для возведения в степень можно использовать **, или Math.pow.
 
 function f7() {
-
+	const inp1 = +document.querySelector('.i-71').value;
+	const inp2 = +document.querySelector('.i-72').value;
+	const out = document.querySelector('.out-7');
+	out.textContent = inp1 ** inp2;
 }
 
 document.querySelector('.b-7').onclick = f7;
@@ -113,7 +116,19 @@ document.querySelector('.b-7').onclick = f7;
 // Дан select s-8, который содержит 3 значения: 1, 2, 3. Дана кнопка b-8. При ее  нажатии срабатывает функция f8. Функция должна получить выбранное в select число, потом с помощью switch case сравнить его поочередно с ‘1’, ‘2’, ‘3’. И если число выбрано - 1, то вывести в out-8 строку one, если 2 - two, если 3 - three.
 
 function f8() {
-
+	const sel = +document.querySelector('.s-8').value;
+	const out = document.querySelector('.out-8');
+	switch (sel) {
+		case 1:
+			out.textContent = 'one';
+			break;
+		case 2:
+			out.textContent = 'two';
+			break;
+		case 3:
+			out.textContent = 'three';
+			break;
+	}
 }
 
 document.querySelector('.b-8').onclick = f8;
@@ -126,7 +141,20 @@ document.querySelector('.b-8').onclick = f8;
 //     В противном случае, вывести 0.
 
 function f9() {
-
+	const a = +document.querySelector('.i-9').value;
+	const out = document.querySelector('.out-9');
+	if (a >= 1 && a <= 32) {
+		out.textContent = 1;
+	}
+	else if (a >= 33 && a <= 43) {
+		out.textContent = 2;
+	}
+	else if (a >= 44 && a <= 64) {
+		out.textContent = 3;
+	}
+	else {
+		out.textContent = 0;
+	}
 }
 
 document.querySelector('.b-9').onclick = f9;
