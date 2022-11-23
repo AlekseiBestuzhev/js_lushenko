@@ -35,9 +35,16 @@ document.querySelector('.b-2').onclick = f2;
 // Task 3
 // Даны 2 input - i-31 и i-32, оба - input[type=number]. При нажатии кнопки b-3 срабатывает функция f3. Функция должна вычитать содержимое i-31 и i-32 в переменные и сравнить их, вывести в  out-3 большее число.
 //     Проведите самостоятельный тест работы, введите пары чисел 4 и 9, 9 и 22, 5 и 111.
-
 function f3() {
-
+	const in1 = +document.querySelector('.i-31').value;
+	const in2 = +document.querySelector('.i-32').value;
+	const out = document.querySelector('.out-3');
+	if (in1 > in2) {
+		out.textContent = in1;
+	}
+	else {
+		out.textContent = in2;
+	}
 }
 
 document.querySelector('.b-3').onclick = f3;
@@ -46,7 +53,14 @@ document.querySelector('.b-3').onclick = f3;
 // Task 4. Создайте на странице input[type=number] с классом i-4, куда пользователь может ввести год своего рождения. Есть кнопка b-4 которая запускает функцию f4. Функция должна вывести в  .out-4 число 1 если пользователю больше или равно 18 лет, и 0 если меньше.
 
 function f4() {
-
+	const inp = +document.querySelector('.i-4').value;
+	const out = document.querySelector('.out-4');
+	if (inp >= 18) {
+		out.textContent = 1;
+	}
+	else {
+		out.textContent = 0;
+	}
 }
 
 document.querySelector('.b-4').onclick = f4;
