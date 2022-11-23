@@ -189,7 +189,9 @@ document.querySelector('.b-10').onclick = f10;
 // Дан select s-110. По изменению состояния select (событие onchange) выведите value выбранного option в out-11.
 
 function f11() {
-
+	const sel = +document.querySelector('.s-110').value;
+	const out = document.querySelector('.out-11');
+	out.textContent = sel;
 }
 
 document.querySelector('.s-110').onchange = f11;
