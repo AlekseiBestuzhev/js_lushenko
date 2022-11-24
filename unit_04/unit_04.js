@@ -198,6 +198,8 @@ document.querySelector('.b-16').onclick = f16;
 // Создайте select.s-17. Добавьте ему событие onchange, при наступлении которого запускается функция f17. Функция должна выводить в out-17 value выбранного в select option.
 
 function f17() {
+	const sel = document.querySelector('.s-17');
+	document.querySelector('.out-17').textContent = sel.value;
 
 }
 
@@ -207,7 +209,9 @@ document.querySelector('.s-17').onchange = f17;
 // Создайте select.s-18 и input.i-18. Добавьте на select событие onchange, при наступлении которого запускается функция f18. Функция должна выводить в input i-18 value выбранного в select option.
 
 function f18() {
-
+	const sel = document.querySelector('.s-18').value;
+	const inp = document.querySelector('.i-18');
+	inp.value = sel;
 }
 
 document.querySelector('.s-18').onchange = f18;
