@@ -68,7 +68,16 @@ document.querySelector('.b-6').onclick = f6;
 // Создайте input(password).i-7 и button.b-7 - при нажатии на кнопку выводите в div.out-71 value прописанное в input. В .out-72 выводите 1 если длина пароля больше или равна 6 или 0 если меньше. Для подсчета количества символов в строке используйте length.
 
 function f7() {
-
+	const inp = document.querySelector('.i-7').value;
+	const out = document.querySelector('.out-72');
+	document.querySelector('.out-71').textContent = inp;
+	// const a = inp.length;
+	if (inp.length >= 6) {
+		out.textContent = 1;
+	}
+	else {
+		out.textContent = 0;
+	}
 }
 
 document.querySelector('.b-7').onclick = f7;
@@ -82,12 +91,14 @@ function f8() {
 	//  потом получаем кнопку со страницы и вешаем событие
 	//    вашасозданнаякнопка.onclick = f81;
 	//
+	document.querySelector('.out-8').innerHTML = '<div class="form-control">Input i-7 <input type="password" class="i-81"> </div><button class="button-primary b-81">New</button>';
+	const a = document.querySelector('.i-81');
+	document.querySelector('.b-81').onclick = f81;
+
+	function f81() {
+		document.querySelector('.out-81').textContent = a.value;
+	}
 }
-
-function f81() {
-
-}
-
 document.querySelector('.b-8').onclick = f8;
 
 // Task 9
