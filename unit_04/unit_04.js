@@ -96,6 +96,7 @@ function f8() {
 	document.querySelector('.b-81').onclick = f81;
 
 	function f81() {
+		// ! вот тут вопрос. По заданию функции были не вложены, правильно ли я сделал, что запихал одну в другую?
 		document.querySelector('.out-81').textContent = a.value;
 	}
 }
@@ -105,7 +106,14 @@ document.querySelector('.b-8').onclick = f8;
 //Создайте один input(radio).r-9  и button.b-9 - при нажатии на button если radio.r-9 выбран (активен, checked) выводите в .out-9 - value прописанное в r-9, либо 0 если не активен. 
 
 function f9() {
-
+	const a = document.querySelector('.r-9');
+	const b = document.querySelector('.out-9');
+	if (a.checked) {
+		b.textContent = a.value;
+	}
+	else {
+		b.textContent = a.checked
+	}
 }
 
 document.querySelector('.b-9').onclick = f9;
@@ -115,7 +123,9 @@ document.querySelector('.b-9').onclick = f9;
 
 
 function f10() {
-
+	const inp = document.querySelector('.i-10').value;
+	const out = document.querySelector('.out-10');
+	out.style.background = inp;
 }
 
 document.querySelector('.b-10').onclick = f10;
