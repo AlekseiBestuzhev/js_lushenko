@@ -220,7 +220,9 @@ document.querySelector('.s-18').onchange = f18;
 // Создайте форму. В ней input(text).i-191 и input(password).i-192 - и кнопку button.b-19. По нажатию кнопки выводите значение text и password в out-19 через пробел. Обратите внимание на хитрость. Мы, кнопку сейчас повесили за пределами формы. Чуть позже мы рассмотрим почему это делали.
 
 function f19() {
-
+	const t = document.querySelector('.i-191').value;
+	const p = document.querySelector('.i-192').value;
+	document.querySelector('.out-19').textContent = t + ' ' + p;
 }
 
 document.querySelector('.b-19').onclick = f19;
@@ -236,7 +238,9 @@ function f20(e) {
 	let form = document.querySelector('.f-20');
 	console.log(form.elements);
 	console.log(form.elements['username'].value); // так можно обратиться к элементу внутри формы
-
+	const a = form.elements['username'].value;
+	const b = form.elements['password'].value;
+	document.querySelector('.out-20').textContent = a + ' ' + b;
 }
 
 document.querySelector('.b-20').onclick = f20;
