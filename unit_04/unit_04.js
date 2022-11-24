@@ -156,7 +156,8 @@ document.querySelector('.b-12').onclick = f12;
 //  Создайте input(range).i-13. При изменении положения ползунка i-13 выводите значение в out-13. Для события используйте oninput.
 
 function f13() {
-
+	document.querySelector('.out-13').textContent = document.querySelector('.i-13').value;
+	// ! В таких случаях делать упор на читаемость и вводить переменные или писать в меньшее количество строк?
 }
 
 document.querySelector('.i-13').oninput = f13;
@@ -165,7 +166,8 @@ document.querySelector('.i-13').oninput = f13;
 // Создайте text-area.t-14 и button.b-14 - при нажатии на кнопку выводите на в out-14 текст введенный в t-14.
 
 function f14() {
-
+	const tex = document.querySelector('.t-14').value;
+	document.querySelector('.out-14').textContent = tex;
 }
 
 document.querySelector('.b-14').onclick = f14;
