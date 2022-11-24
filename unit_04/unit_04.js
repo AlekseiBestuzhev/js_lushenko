@@ -176,7 +176,9 @@ document.querySelector('.b-14').onclick = f14;
 // Создайте text-area.t-15, input.i-15 и button.b-15 - при нажатии на кнопку выводите текст из input.i-15 в textarea.t-15 и на страницу в out-15.
 
 function f15() {
-
+	const inp = document.querySelector('.i-15').value;
+	document.querySelector('.t-15').textContent = inp;
+	document.querySelector('.out-15').textContent = inp;
 }
 
 document.querySelector('.b-15').onclick = f15;
@@ -186,7 +188,8 @@ document.querySelector('.b-15').onclick = f15;
 
 function f16() {
 	// для получения выбранного option просто получите select в переменную и select.value;
-
+	const sel = document.querySelector('.s-16');
+	document.querySelector('.out-16').textContent = sel.value;
 }
 
 document.querySelector('.b-16').onclick = f16;
