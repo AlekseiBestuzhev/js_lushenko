@@ -41,7 +41,14 @@ document.querySelector('.b-4').onclick = f4;
 //Создайте input(checkbox).i-5 и button.b-5. Для checkbox добавьте value="task-5" - при нажатии на кнопку b-5 выводите value checkbox если checkbox выбран и false если не выбран. Вывод везде в задачах, где не указано другое, осуществляется в div.out-номер задачи. В данном случае div.out-5
 
 function f5() {
-
+	const ch = document.querySelector('.i-5');
+	const out = document.querySelector('.out-5');
+	if (ch.checked) {
+		out.textContent = document.querySelector('.i-5').value;
+	}
+	else {
+		out.textContent = ch.checked;
+	}
 }
 
 document.querySelector('.b-5').onclick = f5;
@@ -51,7 +58,8 @@ document.querySelector('.b-5').onclick = f5;
 //Создайте input(hidden).i-6 и button.b-6 - при нажатии на кнопку выводите value из input в div.out-6
 
 function f6() {
-
+	const inp = document.querySelector('.i-6').value;
+	document.querySelector('.out-6').textContent = inp;
 }
 
 document.querySelector('.b-6').onclick = f6;
