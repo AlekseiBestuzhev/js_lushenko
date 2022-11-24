@@ -266,7 +266,7 @@ function f15() {
 		out.textContent = 1;
 	}
 }
-
+// я этого приоритета операторов... мамину маму
 document.querySelector('.b-15').onclick = f15;
 
 // console.log(1 && 1);
