@@ -2,7 +2,7 @@
 // Создайте button.b-1 - при нажатии на него выводите alert с номером задачи. Номер задачи просто пропишите вручную.
 
 function f1() {
-
+	alert(1);
 }
 
 document.querySelector('.b-1').onclick = f1;
@@ -12,7 +12,7 @@ document.querySelector('.b-1').onclick = f1;
 // Создайте input.b-2 type=button - при нажатии на него выводите alert с номером задачи. Номер задачи просто пропишите вручную.
 
 function f2() {
-
+	alert(2);
 }
 
 document.querySelector('.b-2').onclick = f2;
@@ -68,14 +68,14 @@ document.querySelector('.b-7').onclick = f7;
 // Создайте div.out-8 и кнопку .b-8. При нажатии кнопки создавайте внутри div.out-8 элемент input.i-81 и кнопку .b-81 (innerHTML). Добавьте на созданную кнопку событие клик и запуск функции f81. Функция должна в .out-81 выводить value созданного input.i-81.
 
 function f8() {
-    // кнопку создаем через ....innerHTML = '<button....</button>
-    // т.е. как строку и в ставляем на страницу
-    //  потом получаем кнопку со страницы и вешаем событие
-    //    вашасозданнаякнопка.onclick = f81;
-    //
+	// кнопку создаем через ....innerHTML = '<button....</button>
+	// т.е. как строку и в ставляем на страницу
+	//  потом получаем кнопку со страницы и вешаем событие
+	//    вашасозданнаякнопка.onclick = f81;
+	//
 }
 
-function f81 () {
+function f81() {
 
 }
 
@@ -150,7 +150,7 @@ document.querySelector('.b-15').onclick = f15;
 // Создайте select.s-16 и button.b-16 - при нажатии на кнопку выводите в out-16 value выбранного option из s-16.
 
 function f16() {
-    // для получения выбранного option просто получите select в переменную и select.value;
+	// для получения выбранного option просто получите select в переменную и select.value;
 
 }
 
@@ -190,10 +190,10 @@ document.querySelector('.b-19').onclick = f19;
 // обратите внимание, что мы не используем class, а присвоили name!!!
 
 function f20(e) {
-    e.preventDefault(); // чтобы форма не перезагружала страницу!!!!
-    let form = document.querySelector('.f-20');
-    console.log(form.elements);
-    console.log(form.elements['username'].value); // так можно обратиться к элементу внутри формы
+	e.preventDefault(); // чтобы форма не перезагружала страницу!!!!
+	let form = document.querySelector('.f-20');
+	console.log(form.elements);
+	console.log(form.elements['username'].value); // так можно обратиться к элементу внутри формы
 
 }
 
