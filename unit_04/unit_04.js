@@ -135,7 +135,9 @@ document.querySelector('.b-10').onclick = f10;
 //   Создайте input(color).i-111 и input(color).i-112- два элемента и button.b-11 - при нажатии на кнопку присвойте цвет из первого input в value второго.
 
 function f11() {
-
+	const inp1 = document.querySelector('.i-111').value;
+	const inp2 = document.querySelector('.i-112');
+	inp2.value = inp1;
 }
 
 document.querySelector('.b-11').onclick = f11;
@@ -144,7 +146,8 @@ document.querySelector('.b-11').onclick = f11;
 //   Создайте input(date).i-12 и button.b-12 - при нажатии на кнопку выводите на в  out-12 выбранную в input дату.
 
 function f12() {
-
+	const inp = document.querySelector('.i-12').value;
+	document.querySelector('.out-12').textContent = inp;
 }
 
 document.querySelector('.b-12').onclick = f12;
