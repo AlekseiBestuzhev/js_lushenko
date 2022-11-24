@@ -22,7 +22,7 @@ document.querySelector('.b-2').onclick = f2;
 // Создайте p.p-3 - при нажатии на него выводите alert с номером задачи.
 
 function f3() {
-
+	alert(3);
 }
 
 document.querySelector('.p-3').onclick = f3;
@@ -31,7 +31,8 @@ document.querySelector('.p-3').onclick = f3;
 // Task 4. Создайте input(checkbox).i-4 и button.b-4 - при нажатии на кнопку выводите true если checkbox выбран и false если не выбран. Вывод везде в задачах, где не указано другое, осуществляется в div.out-номер задачи. В данном случае div.out-4
 
 function f4() {
-
+	const ch = document.querySelector('.i-4').checked;
+	document.querySelector('.out-4').textContent = ch;
 }
 
 document.querySelector('.b-4').onclick = f4;
