@@ -92,13 +92,11 @@ function f8() {
 	//    вашасозданнаякнопка.onclick = f81;
 	//
 	document.querySelector('.out-8').innerHTML = '<div class="form-control">Input i-7 <input type="password" class="i-81"> </div><button class="button-primary b-81">New</button>';
-	const a = document.querySelector('.i-81');
 	document.querySelector('.b-81').onclick = f81;
-
-	function f81() {
-		// ! вот тут вопрос. По заданию функции были не вложены, правильно ли я сделал, что запихал одну в другую?
-		document.querySelector('.out-81').textContent = a.value;
-	}
+}
+function f81() {
+	const a = document.querySelector('.i-81');
+	document.querySelector('.out-81').textContent = a.value;
 }
 document.querySelector('.b-8').onclick = f8;
 
