@@ -102,7 +102,6 @@ function t6() {
 		out += '******<br> ******<br> ******<br> ';
 	}
 	document.querySelector('.out-6').innerHTML = out;
-
 }
 
 document.querySelector('.b-6').onclick = t6;
@@ -116,6 +115,12 @@ document.querySelector('.b-6').onclick = t6;
 // Задача решается с помощью цикла.
 
 function t7() {
+	let out = '';
+	const inp = document.querySelector('.i-7').value;
+	for (i = inp; i >= 0; i--) {
+		out += i + ' ';
+	}
+	document.querySelector('.out-7').textContent = out;
 
 }
 
@@ -131,7 +136,13 @@ document.querySelector('.b-7').onclick = t7;
 // Задача решается с помощью цикла.
 
 function t8() {
-
+	let out = '';
+	const inp1 = document.querySelector('.i-81').value;
+	const inp2 = document.querySelector('.i-82').value;
+	for (i = inp1; i <= inp2; i++) {
+		out += i + ' ';
+	}
+	document.querySelector('.out-8').textContent = out;
 }
 
 document.querySelector('.b-8').onclick = t8;
