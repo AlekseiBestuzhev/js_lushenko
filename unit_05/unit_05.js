@@ -137,8 +137,8 @@ document.querySelector('.b-7').onclick = t7;
 
 function t8() {
 	let out = '';
-	const inp1 = document.querySelector('.i-81').value;
-	const inp2 = document.querySelector('.i-82').value;
+	const inp1 = +document.querySelector('.i-81').value;
+	const inp2 = +document.querySelector('.i-82').value;
 	for (i = inp1; i <= inp2; i++) {
 		out += i + ' ';
 	}
@@ -159,7 +159,22 @@ document.querySelector('.b-8').onclick = t8;
 // цикл - один
 
 function t9() {
+	const inp1 = +document.querySelector('.i-91').value;
+	const inp2 = +document.querySelector('.i-92').value;
+	let out = '';
 
+	if (inp1 > inp2) {
+		for (let i = inp2; i <= inp1; i++) {
+			out += i + ' ';
+		}
+	}
+	else {
+		for (let i = inp1; i <= inp2; i++) {
+			out += i + ' ';
+		}
+	}
+
+	document.querySelector('.out-9').textContent = out;
 }
 
 document.querySelector('.b-9').onclick = t9;
