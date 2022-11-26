@@ -256,7 +256,12 @@ document.querySelector('.b-13').onclick = t13;
 
 
 function t14() {
-
+	let rad = document.querySelectorAll('.i-14[type = "radio"]');
+	for (let i = 0; i < rad.length; i++) {
+		if (rad[i].checked) {
+			document.querySelector('.out-14').textContent = rad[i].value;
+		}
+	}
 }
 
 document.querySelector('.b-14').onclick = t14;
