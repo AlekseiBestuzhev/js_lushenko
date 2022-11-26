@@ -273,7 +273,11 @@ document.querySelector('.b-14').onclick = t14;
 // Подсказка (10 - i) + ' ' + i
 
 function t15() {
-
+	let out = '';
+	for (let i = 0; i <= 10; i++) {
+		out += (10 - i) + ' ' + i + ' ';
+	}
+	document.querySelector('.out-15').textContent = out;
 }
 
 document.querySelector('.b-15').onclick = t15;
