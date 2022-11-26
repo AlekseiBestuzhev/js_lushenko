@@ -238,6 +238,11 @@ document.querySelector('.b-12').onclick = t12;
 // применить к каждому elem[i].value, причем к value первого должно равняться 1, второго - 2, третьего - 3...
 
 function t13() {
+	let div = document.querySelectorAll('.i-13');
+	for (let i = 0; i < div.length; i++) {
+		div[i].value = i + 1;
+		console.log(div[i].value);
+	}
 
 }
 
