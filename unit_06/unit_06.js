@@ -180,7 +180,14 @@ document.querySelector('.b-7').onclick = t7;
 // </pre>
 // <p>Внешний цикл выводит перенос строки br. Вложенный цикл рисует звездочки. </p>
 function t8() {
-
+	let out = '';
+	for (let i = 5; i > 0; i--) {
+		for (let k = 0; k < i; k++) {
+			out += '*';
+		}
+		out += '<br>';
+	}
+	document.querySelector('.out-8').innerHTML = out;
 }
 
 document.querySelector('.b-8').onclick = t8;
