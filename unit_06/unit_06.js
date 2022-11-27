@@ -229,7 +229,19 @@ document.querySelector('.b-9').onclick = t9;
 // <p>Внешний цикл выводит перенос строки br и запускается от 0 до 6.</p>
 // <p>Вложенный цикл рисует цифры от 0 до 9. Обратите внимание, что первый ряд - есть ведущий нуль. Здесь все просто - проверили, если число меньше 10 - то конкатенируем нуль.</p>
 function t10() {
-
+	let out = '';
+	for (let i = 0; i < 5; i++) {
+		for (let k = 1; k < 11; k++) {
+			if (k == 10) {
+				out += `${i + 1}0`
+			}
+			else {
+				out += `${i}${k} `
+			}
+		}
+		out += '<br>';
+	}
+	document.querySelector('.out-10').innerHTML = out;
 }
 
 document.querySelector('.b-10').onclick = t10;
