@@ -156,7 +156,14 @@ document.querySelector('.b-6').onclick = t6;
 // </pre>
 // <p>Внешний цикл выводит перенос строки br. Вложенный цикл запускается от нуля до i и рисует звездочку.</p>
 function t7() {
-
+	let out = '';
+	for (let i = 1; i < 5; i++) {
+		for (let k = 0; k < i; k++) {
+			out += '*';
+		}
+		out += '<br>';
+	}
+	document.querySelector('.out-7').innerHTML = out;
 }
 
 document.querySelector('.b-7').onclick = t7;
