@@ -204,7 +204,14 @@ document.querySelector('.b-8').onclick = t8;
 // </pre>
 // <p>Внешний цикл выводит перенос строки br. Вложенный цикл рисует цифры</p>
 function t9() {
-
+	let out = '';
+	for (let i = 2; i < 7; i++) {
+		for (let k = 1; k < i; k++) {
+			out += k + ' ';
+		}
+		out += '<br>';
+	}
+	document.querySelector('.out-9').innerHTML = out;
 }
 
 document.querySelector('.b-9').onclick = t9;
