@@ -71,7 +71,15 @@ document.querySelector('.b-3').onclick = t3;
 // 1_1 2 3 4 5 2_1 2 3 4 5 3_1 2 3 4 5
 // </pre>
 function t4() {
+	let out = '';
+	for (let i = 1; i < 4; i++) {
+		out += i + '_';
+		for (let k = 1; k < 6; k++) {
+			out += k + ' ';
+		}
 
+	}
+	document.querySelector('.out-4').innerHTML = out;
 }
 
 document.querySelector('.b-4').onclick = t4;
