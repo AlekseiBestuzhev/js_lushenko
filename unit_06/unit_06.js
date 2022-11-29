@@ -250,7 +250,49 @@ document.querySelector('.b-10').onclick = t10;
 // Используя вложенные циклы создайте таблицу умножения от 1 до 10. Т.е. вначале столбец 1x1, 1x2...1x9 потом 2x1, 2x2 ... 2x9 и так далее. Оформить в виде столбцов где выводятся множители и результат.Используя вложенные циклы создайте таблицу умножения от 1 до 10. Т.е. вначале столбец 1x1, 1x2...1x9 потом 2x1, 2x2 ... 2x9 и так далее. Оформить в виде столбцов где выводятся множители и результат.
 
 function t11() {
-
+	let out = '';
+	for (let i = 1; i < 11; i++) {
+		for (let k = 1; k < 11; k++) {
+			out += `${i}*${k}=${i * k};<br>`;
+		}
+		out += '<hr>';
+	}
+	document.querySelector('.out-11').innerHTML = out;
 }
 
 document.querySelector('.b-11').onclick = t11;
+
+//  Task 12
+// Используя вложенные циклы создайте 
+
+function t12() {
+	let out = '';
+	for (let i = 0; i < 3; i++) {
+		for (let k = 0; k < 5; k++) {
+			out += '*';
+		}
+		out += '<br>';
+	}
+	document.querySelector('.out-12').innerHTML = out;
+}
+
+document.querySelector('.b-12').onclick = t12;
+
+//  Task 13
+// Используя вложенные циклы создайте 
+
+function t13() {
+
+}
+
+document.querySelector('.b-13').onclick = t13;
+
+//  Task 1
+// Используя вложенные циклы создайте 
+
+function t() {
+
+}
+
+document.querySelector('.b-').onclick;
+
