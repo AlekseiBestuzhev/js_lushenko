@@ -282,12 +282,62 @@ document.querySelector('.b-12').onclick = t12;
 // Используя вложенные циклы создайте 
 
 function t13() {
-
+	let out = '';
+	for (let i = 5; i > 0; i--) {
+		for (let k = 0; k < i; k++) {
+			out += '*';
+		}
+		out += '<br>';
+	}
+	document.querySelector('.out-13').innerHTML = out;
 }
 
 document.querySelector('.b-13').onclick = t13;
 
-//  Task 1
+//  Task 14
+// Используя вложенные циклы создайте 
+
+function t14() {
+	let out = '';
+	for (let i = 2; i >= 0; i--) {
+		for (let k = 0; k < i; k++) {
+			out += ' ';
+		}
+		out += '*****<br>';
+	}
+	document.querySelector('.out-14').innerHTML = '<code>' + out + '</code>';
+}
+
+document.querySelector('.b-14').onclick = t14;
+
+//  Task 14
+// Используя вложенные циклы создайте 
+
+function t() {
+
+}
+
+document.querySelector('.b-').onclick;
+
+//  Task 14
+// Используя вложенные циклы создайте 
+
+function t() {
+
+}
+
+document.querySelector('.b-').onclick;
+
+//  Task 14
+// Используя вложенные циклы создайте 
+
+function t() {
+
+}
+
+document.querySelector('.b-').onclick;
+
+//  Task 14
 // Используя вложенные циклы создайте 
 
 function t() {
