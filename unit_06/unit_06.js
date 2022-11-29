@@ -340,7 +340,7 @@ function t16() {
 	let hCount = 9;
 	let vCount = 5;
 	const wSp = ' ';
-	const sym = 'D'
+	const sym = '*'
 	let out = '';
 	for (let i = 0; i < vCount; i++) {
 		if (i == 0 || i == vCount - 1) {
@@ -357,19 +357,26 @@ function t16() {
 			out += sym + '<br>';
 		}
 	}
-	document.querySelector('.out-16').innerHTML = '<pre><code>' + out + '</code></pre>';
+	document.querySelector('.out-16').innerHTML = '<code>' + out + '</code>';
 }
 
 document.querySelector('.b-16').onclick = t16;
 
-//  Task 14
+//  Task 17
 // Используя вложенные циклы создайте 
 
-function t() {
-
+function t17() {
+	let out = '';
+	for (let i = 5; i > 0; i--) {
+		for (let k = i; k > 0; k--) {
+			out += k;
+		}
+		out += '<br>'
+	}
+	document.querySelector('.out-17').innerHTML = out;
 }
 
-document.querySelector('.b').onclick;
+document.querySelector('.b-17').onclick = t17;
 
 //  Task 14
 // Используя вложенные циклы создайте 
