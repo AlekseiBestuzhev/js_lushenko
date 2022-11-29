@@ -310,14 +310,27 @@ function t14() {
 
 document.querySelector('.b-14').onclick = t14;
 
-//  Task 14
+//  Task 15
 // Используя вложенные циклы создайте 
 
-function t() {
-
+function t15() {
+	let out = '';
+	for (let i = 1; i < 4; i++) {
+		for (let k = 0; k < i; k++) {
+			out += '*';
+		}
+		out += '<br>';
+	}
+	for (let i = 2; i > 0; i--) {
+		for (let k = 0; k < i; k++) {
+			out += '*';
+		}
+		out += '<br>';
+	}
+	document.querySelector('.out-15').innerHTML = out;
 }
 
-document.querySelector('.b-').onclick;
+document.querySelector('.b-15').onclick = t15;
 
 //  Task 14
 // Используя вложенные циклы создайте 
