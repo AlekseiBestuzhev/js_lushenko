@@ -369,7 +369,7 @@ function t17() {
 	let out = '';
 	for (let i = 5; i > 0; i--) {
 		for (let k = i; k > 0; k--) {
-			out += k;
+			out += k + ' ';
 		}
 		out += '<br>'
 	}
@@ -378,12 +378,32 @@ function t17() {
 
 document.querySelector('.b-17').onclick = t17;
 
-//  Task 14
+//  Task 18
 // Используя вложенные циклы создайте 
 
-function t() {
-
+function t18() {
+	let out = '';
+	let ws = '  ';
+	for (let i = 1; i < 6; i++) {
+		for (let k = i; k > 0; k--) {
+			if (k == 1 && i == 1) {
+				out += ws + ws + ws + ws;
+			}
+			else if (k == 2 && i == 2) {
+				out += ws + ws + ws;
+			}
+			else if (k == 3 && i == 3) {
+				out += ws + ws;
+			}
+			else if (k == 4 && i == 4) {
+				out += ws;
+			}
+			out += k + ' ';
+		}
+		out += '<br>'
+	}
+	document.querySelector('.out-18').innerHTML = '<code>' + out + '</code>';
 }
 
-document.querySelector('.b-').onclick;
+document.querySelector('.b-18').onclick = t18;
 
