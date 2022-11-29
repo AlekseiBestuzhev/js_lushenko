@@ -332,6 +332,36 @@ function t15() {
 
 document.querySelector('.b-15').onclick = t15;
 
+//  Task 16
+// Используя вложенные циклы создайте 
+
+function t16() {
+
+	let hCount = 9;
+	let vCount = 5;
+	const wSp = ' ';
+	const sym = 'D'
+	let out = '';
+	for (let i = 0; i < vCount; i++) {
+		if (i == 0 || i == vCount - 1) {
+			for (let k = 0; k < hCount - 3; k++) {
+				out += sym;
+			}
+			out += '<br>'
+		}
+		else {
+			out += sym;
+			for (let j = 0; j < hCount - 2; j++) {
+				out += wSp;
+			}
+			out += sym + '<br>';
+		}
+	}
+	document.querySelector('.out-16').innerHTML = '<pre><code>' + out + '</code></pre>';
+}
+
+document.querySelector('.b-16').onclick = t16;
+
 //  Task 14
 // Используя вложенные циклы создайте 
 
@@ -339,16 +369,7 @@ function t() {
 
 }
 
-document.querySelector('.b-').onclick;
-
-//  Task 14
-// Используя вложенные циклы создайте 
-
-function t() {
-
-}
-
-document.querySelector('.b-').onclick;
+document.querySelector('.b').onclick;
 
 //  Task 14
 // Используя вложенные циклы создайте 
