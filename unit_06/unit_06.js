@@ -509,7 +509,32 @@ document.querySelector('.b-22').onclick = t22;
 // Используя вложенные циклы создайте 
 
 function t23() {
-
+	const ws = ' ';
+	const sym = '*';
+	let out = '';
+	for (let i = 0; i < 5; i++) {
+		if (i == 0 || i == 4) {
+			out += ws + ws;
+			for (let k = 0; k < 2; k++) {
+				out += sym;
+			}
+			out += '<br>';
+		}
+		else if (i == 1 || i == 3) {
+			out += ws;
+			for (let k = 0; k < 4; k++) {
+				out += sym;
+			}
+			out += '<br>';
+		}
+		else {
+			for (let j = 0; j < 6; j++) {
+				out += sym;
+			}
+			out += '<br>';
+		}
+	}
+	document.querySelector('.out-23').innerHTML = '<code>' + out + '</code>';
 }
 
 document.querySelector('.b-23').onclick = t23;
