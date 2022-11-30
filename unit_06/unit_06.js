@@ -455,7 +455,19 @@ document.querySelector('.b-20').onclick = t20;
 // Используя вложенные циклы создайте 
 
 function t21() {
-
+	let out = '';
+	for (let i = 5; i > 0; i--) {
+		for (let k = 0; k < (6 - i); k++) {
+			if (i == 4 || i == 2) {
+				out += 'X ';
+			}
+			else {
+				out += i + ' ';
+			}
+		}
+		out += '<br>';
+	}
+	document.querySelector('.out-21').innerHTML = out;
 }
 
 document.querySelector('.b-21').onclick = t21;
