@@ -439,7 +439,14 @@ document.querySelector('.b-19').onclick = t19;
 // Используя вложенные циклы создайте 
 
 function t20() {
-
+	let out = '';
+	for (let i = 1; i < 6; i++) {
+		for (let k = 0; k < i; k++) {
+			out += i + ' ';
+		}
+		out += '<br>';
+	}
+	document.querySelector('.out-20').innerHTML = out;
 }
 
 document.querySelector('.b-20').onclick = t20;
