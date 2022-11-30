@@ -406,4 +406,68 @@ function t18() {
 }
 
 document.querySelector('.b-18').onclick = t18;
+//  Task 19
+// Используя вложенные циклы создайте 
+
+function t19() {
+	let out = '';
+	let ws = 'Х ';
+	for (let i = 1; i < 6; i++) {
+		for (let k = i; k > 0; k--) {
+			if (k == 1 && i == 1) {
+				out += ws + ws + ws + ws;
+			}
+			else if (k == 2 && i == 2) {
+				out += ws + ws + ws;
+			}
+			else if (k == 3 && i == 3) {
+				out += ws + ws;
+			}
+			else if (k == 4 && i == 4) {
+				out += ws;
+			}
+			out += k + ' ';
+		}
+		out += '<br>'
+	}
+	document.querySelector('.out-19').innerHTML = '<code>' + out + '</code>';
+}
+
+document.querySelector('.b-19').onclick = t19;
+
+//  Task 20
+// Используя вложенные циклы создайте 
+
+function t20() {
+
+}
+
+document.querySelector('.b-20').onclick = t20;
+
+//  Task 21
+// Используя вложенные циклы создайте 
+
+function t21() {
+
+}
+
+document.querySelector('.b-21').onclick = t21;
+
+//  Task 22
+// Используя вложенные циклы создайте 
+
+function t22() {
+
+}
+
+document.querySelector('.b-22').onclick = t22;
+
+//  Task 23
+// Используя вложенные циклы создайте 
+
+function t23() {
+
+}
+
+document.querySelector('.b-23').onclick = t23;
 
