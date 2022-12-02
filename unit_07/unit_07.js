@@ -67,7 +67,8 @@ document.querySelector('.b-5').onclick = function () {
 // Напишите функцию t6, которая принимает 2 числа и возвращает случайное целое число от первого до второго принятого параметра. 
 
 function t6(a, b) {
-
+	let c = a + Math.random() * (b - a + 1);
+	return Math.floor(c);
 }
 
 document.querySelector('.b-6').onclick = function () {
