@@ -104,6 +104,12 @@ document.querySelector('.b-8').onclick = function () {
 // Напишите функцию t9, которая принимает число и возвращает true, если число четное, и false если не четное. 
 
 function t9(num) {
+	if (num % 2 == 0) {
+		return true;
+	}
+	else {
+		return false;
+	}
 
 }
 
