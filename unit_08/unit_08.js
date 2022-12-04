@@ -129,7 +129,13 @@ document.querySelector('.b-6').onclick = t6;
 // Задача решается с помощью цикла  while.
 
 function t7() {
-
+	let itr = +document.querySelector('.i-7').value;
+	let out = '';
+	while (itr >= 0) {
+		out += itr + ' ';
+		itr--;
+	}
+	document.querySelector('.out-7').textContent = out;
 }
 
 document.querySelector('.b-7').onclick = t7;
@@ -144,7 +150,14 @@ document.querySelector('.b-7').onclick = t7;
 // Задача решается с помощью цикла  while.
 
 function t8() {
-
+	let itr1 = +document.querySelector('.i-81').value;
+	let itr2 = +document.querySelector('.i-82').value;
+	let out = '';
+	while (itr1 <= itr2) {
+		out += itr1 + ' ';
+		itr1++;
+	}
+	document.querySelector('.out-8').textContent = out;
 }
 
 document.querySelector('.b-8').onclick = t8;
