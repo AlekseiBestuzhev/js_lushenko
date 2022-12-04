@@ -173,7 +173,22 @@ document.querySelector('.b-8').onclick = t8;
 // Задача решается с помощью цикла. Подсказка - вначале делаем проверку, а потом запускаем цикл  while.
 
 function t9() {
-
+	let num1 = +document.querySelector('.i-91').value;
+	let num2 = +document.querySelector('.i-92').value;
+	let out = '';
+	if (num1 < num2) {
+		while (num1 <= num2) {
+			out += num1 + ' ';
+			num1++;
+		}
+	}
+	else {
+		while (num2 <= num1) {
+			out += num2 + ' ';
+			num2++;
+		}
+	}
+	document.querySelector('.out-9').textContent = out;
 }
 
 document.querySelector('.b-9').onclick = t9;
@@ -184,7 +199,13 @@ document.querySelector('.b-9').onclick = t9;
 // Разделитель - пробел. Задача решается через цикл, а четность - через шаг (равный 2).
 
 function t10() {
-
+	let year = 1950;
+	let out = '';
+	while (year <= 2000) {
+		out += year + ' ';
+		year = year + 2;
+	}
+	document.querySelector('.out-10').textContent = out;
 }
 
 document.querySelector('.b-10').onclick = t10;
