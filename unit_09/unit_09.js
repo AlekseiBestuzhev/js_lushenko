@@ -47,7 +47,15 @@ document.querySelector('.b-4').onclick = f4;
 // По нажатию b-5 запускайте функцию f5, которая проверяет наличие класса bg-4 у блока out-4 (да, именно bg-4 у out-4 ). Результат - true или false, выводите в out-5.
 
 function f5() {
-
+	let out5;
+	let out4 = document.querySelector('.out-4');
+	if (out4.classList.contains('bg-4')) {
+		out5 = true;
+	}
+	else {
+		out5 = false;
+	};
+	document.querySelector('.out-5').innerHTML = out5;
 }
 
 document.querySelector('.b-5').onclick = f5;
@@ -57,7 +65,14 @@ document.querySelector('.b-5').onclick = f5;
 // По нажатию b-6 запускайте функцию f6, которая выводит в out-6 количество параграфов с классом p-6.
 
 function f6() {
-
+	let out;
+	const p = document.querySelectorAll('.p-6');
+	let i = 1;
+	while (i <= p.length) {
+		out = i;
+		i++
+	}
+	document.querySelector('.out-6').textContent = out;
 }
 
 document.querySelector('.b-6').onclick = f6;
