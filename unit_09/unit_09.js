@@ -14,7 +14,8 @@ document.querySelector('.b-1').onclick = f1;
 // По нажатию кнопки b-2 запускайте функцию f2, которая присваивает блоку out-2 класс .bg-2.
 
 function f2() {
-
+	const out = document.querySelector('.out-2');
+	out.classList.add('bg-2');
 }
 
 document.querySelector('.b-2').onclick = f2;
