@@ -220,7 +220,14 @@ document.querySelector('.b-10').onclick = t10;
 
 
 function t11() {
-
+	let div = document.querySelectorAll('.div-11');
+	let out = '';
+	let i = 0;
+	while (i < div.length) {
+		out += div[i].innerHTML + ' ';
+		i++;
+	}
+	document.querySelector('.out-11').textContent = out;
 }
 
 document.querySelector('.b-11').onclick = t11;
@@ -233,7 +240,12 @@ document.querySelector('.b-11').onclick = t11;
 
 
 function t12() {
-
+	let div = document.querySelectorAll('.div-12');
+	let i = 0;
+	while (i < div.length) {
+		div[i].style.background = 'orange';
+		i++;
+	}
 }
 
 document.querySelector('.b-12').onclick = t12;
