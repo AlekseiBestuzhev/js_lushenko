@@ -3,7 +3,9 @@
 
 
 function f1() {
-
+	const out = document.querySelector('.out-1');
+	out.style.width = '200px';
+	out.style.height = '40px';
 }
 
 document.querySelector('.b-1').onclick = f1;
@@ -64,7 +66,7 @@ document.querySelector('.b-6').onclick = f6;
 let blocks7 = document.querySelectorAll('.out-7');
 
 function f7() {
-    //внутри цикла blocks7[i].classList....
+	//внутри цикла blocks7[i].classList....
 }
 
 document.querySelector('.b-7').onclick = f7;
@@ -76,7 +78,7 @@ document.querySelector('.b-7').onclick = f7;
 let blocks8 = document.querySelectorAll('.out-8');
 
 function f8() {
-    //внутри цикла blocks8[i].classList....
+	//внутри цикла blocks8[i].classList....
 }
 
 document.querySelector('.b-8').onclick = f8;
@@ -86,13 +88,13 @@ document.querySelector('.b-8').onclick = f8;
 // Усложним предыдущие задачи. С помощью цикла повесьте на блоки out-9 событие клик. По клику должна выполняться функция f9. Функция, должна добавлять класс bg-9 тому out-9 на котором кликнули.
 
 function f9() {
-    //this.classList...  // все решается одной строкой
+	//this.classList...  // все решается одной строкой
 }
 
 let div9 = document.querySelectorAll('.out-9');
 
 for (let i = 0; i < div9.length; i++) {
-    div9[i].onclick = f9;
+	div9[i].onclick = f9;
 }
 
 
@@ -137,7 +139,7 @@ function f13() {
 }
 
 function f13_1() {
-    document.querySelector('.out-13-1').innerHTML += this.innerHTML;
+	document.querySelector('.out-13-1').innerHTML += this.innerHTML;
 }
 
 
