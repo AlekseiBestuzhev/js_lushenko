@@ -257,7 +257,12 @@ document.querySelector('.b-12').onclick = t12;
 // применить к каждому elem[i].value, причем к value первого должно равняться 1, второго - 2, третьего - 3...
 
 function t13() {
-
+	let inp = document.querySelectorAll('.i-13');
+	let i = 0;
+	while (i < inp.length) {
+		inp[i].value = i + 1;
+		i++;
+	}
 }
 
 document.querySelector('.b-13').onclick = t13;
@@ -270,7 +275,16 @@ document.querySelector('.b-13').onclick = t13;
 
 
 function t14() {
-
+	let inp = document.querySelectorAll('.i-14');
+	let out = '';
+	let i = 0;
+	while (i < inp.length) {
+		if (inp[i].checked) {
+			out += inp[i].value;
+		}
+		i++;
+	}
+	document.querySelector('.out-14').innerHTML = out;
 }
 
 document.querySelector('.b-14').onclick = t14;
