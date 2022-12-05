@@ -295,7 +295,13 @@ document.querySelector('.b-14').onclick = t14;
 // Для вывода использовать цикл  while. Разделитель пробел.
 
 function t15() {
-
+	let out = '';
+	let i = 10;
+	while (i >= 0) {
+		out += i + ' ' + (10 - i) + ' ';
+		i--;
+	}
+	document.querySelector('.out-15').textContent = out;
 }
 
 document.querySelector('.b-15').onclick = t15;
