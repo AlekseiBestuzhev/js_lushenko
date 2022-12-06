@@ -227,7 +227,10 @@ document.querySelector('.b-16').onclick = f16;
 // Добавьте кнопку .b-17, которая запускает функцию f17. Функция создает через createElement div c текстом 17 и добавляет ему класс bg-17. Созданный div заменяет  out-17 с помощью replaceWith.
 
 function f17() {
-
+	let div = document.createElement('div');
+	div.textContent = 17;
+	div.classList.add('bg-17')
+	document.querySelector('.out-17').replaceWith(div);
 }
 
 document.querySelector('.b-17').onclick = f17;
@@ -236,7 +239,8 @@ document.querySelector('.b-17').onclick = f17;
 // Добавьте кнопку .b-18, которая запускает функцию f18. Функция с помощью getAttribute получает data-b атрибут с параграф p-18 и выводит в out-18.
 
 function f18() {
-
+	const a = document.querySelector('.p-18');
+	document.querySelector('.out-18').textContent = a.getAttribute('data-b');
 }
 
 document.querySelector('.b-18').onclick = f18;
