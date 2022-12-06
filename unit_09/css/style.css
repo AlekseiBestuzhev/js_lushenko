@@ -54,3 +54,11 @@ section {
 .bg-17 {
     background: #8FBC8F;
 }
+
+[class*='out']:not(:last-child) {
+	margin-bottom: 5px;
+}
+
+.out-9, .out-10 {
+	cursor: pointer;
+}

@@ -147,7 +147,9 @@ function f10() {
 
 
 function f11() {
-
+	let div = document.createElement('div');
+	div.textContent = 25;
+	document.querySelector('.out-11').appendChild(div);
 }
 
 document.querySelector('.b-11').onclick = f11;
