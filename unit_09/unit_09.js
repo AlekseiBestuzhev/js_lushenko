@@ -70,7 +70,7 @@ function f6() {
 	let i = 1;
 	while (i <= p.length) {
 		out = i;
-		i++
+		i++;
 	}
 	document.querySelector('.out-6').textContent = out;
 }
@@ -85,6 +85,10 @@ let blocks7 = document.querySelectorAll('.out-7');
 
 function f7() {
 	//внутри цикла blocks7[i].classList....
+	let out = document.querySelectorAll('.out-7');
+	for (let i = 0; i < out.length; i++) {
+		out[i].classList.toggle('bg-7');
+	}
 }
 
 document.querySelector('.b-7').onclick = f7;
