@@ -47,16 +47,20 @@ section {
 .bg-7, .bg-10, .bg-13 {
     background: coral;
 }
-.bg-8, .bg-9, .bg-15, .bg-16 {
+.bg-8, .bg-9, .bg-16 {
     background: #6495ED;
 }
 
-.bg-17 {
+.bg-17, .bg-15 {
     background: #8FBC8F;
 }
 
 [class*='out']:not(:last-child) {
-	margin-bottom: 5px;
+	margin-bottom: 7px;
+}
+
+[class*='bg']:not(:last-child) {
+	margin-bottom: 7px;
 }
 
 .out-9, .out-10, .bg-13 {

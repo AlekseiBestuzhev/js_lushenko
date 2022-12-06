@@ -203,7 +203,10 @@ document.querySelector('.b-14').onclick = f14;
 // Добавьте кнопку .b-15, которая запускает функцию f15. Функция создает через createElement div c текстом 15 и добавляет ему класс bg-15. Созданный div добавляется в out-15 с помощью before.
 
 function f15() {
-
+	let div = document.createElement('div');
+	div.textContent = 15;
+	div.classList.add('bg-15')
+	document.querySelector('.out-15').before(div);
 }
 
 document.querySelector('.b-15').onclick = f15;
@@ -212,7 +215,10 @@ document.querySelector('.b-15').onclick = f15;
 // Добавьте кнопку .b-16, которая запускает функцию f16. Функция создает через createElement div c текстом 16 и добавляет ему класс bg-16. Созданный div добавляется в out-16 с помощью after.
 
 function f16() {
-
+	let div = document.createElement('div');
+	div.textContent = 16;
+	div.classList.add('bg-16')
+	document.querySelector('.out-16').after(div);
 }
 
 document.querySelector('.b-16').onclick = f16;
