@@ -115,6 +115,7 @@ document.querySelector('.b-8').onclick = f8;
 
 function f9() {
 	//this.classList...  // все решается одной строкой
+	this.classList.add('bg-9');
 }
 
 let div9 = document.querySelectorAll('.out-9');
