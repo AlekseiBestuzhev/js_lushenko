@@ -32,8 +32,9 @@ document.querySelector('.b-2').onclick = f2;
 // Тест допустим массив [1,2,3] вывод - 3
 
 // let ar3 =  // переменную обьявляем здесь!!!!
-
+const ar3 = ['Alex', 25, true];
 function f3() {
+	document.querySelector('.out-3').textContent = ar3.length;
 }
 
 document.querySelector('.b-3').onclick = f3;
