@@ -47,8 +47,14 @@ document.querySelector('.b-3').onclick = f3;
 // Тест допустим массив [1,2,3,4,5,6,7,8,9,10] вывод: 1 4 9
 
 // let ar4 =  // переменную обьявляем эту здесь!!!!
-
+const ar4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 function f4() {
+	let out = '';
+	for (let i = 0; i < ar4.length; i++) {
+		if (i == 0 || i == 3 || i == 8)
+			out += ar4[i] + ' ';
+	}
+	document.querySelector('.out-4').innerHTML = out;
 }
 
 document.querySelector('.b-4').onclick = f4;
