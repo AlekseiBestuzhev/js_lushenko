@@ -161,6 +161,9 @@ document.querySelector('.b-9').onclick = f9;
 let ar10 = [100, 200, 300, 400, 700, 121];
 
 function f10() {
+	const last = ar10[ar10.length - 1];
+	const sum = ar10[0] + last;
+	document.querySelector('.out-10').textContent = sum;
 }
 
 document.querySelector('.b-10').onclick = f10;
