@@ -82,8 +82,13 @@ document.querySelector('.b-5').onclick = f5;
 // Вывод в out-6
 
 // let ar6 =
-
+const ar6 = ['Alex', 'programmer', 28, 8]
 function f6() {
+	let out = '';
+	for (i = 0; i < ar6.length; i++) {
+		out += ar6[i] + ' ';
+	}
+	document.querySelector('.out-6').textContent = out;
 }
 
 document.querySelector('.b-6').onclick = f6;
