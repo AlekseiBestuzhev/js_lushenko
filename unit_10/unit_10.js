@@ -146,6 +146,8 @@ document.querySelector('.b-8').onclick = f8;
 let ar9 = [100, 200, 300, 400, 700, 121];
 
 function f9() {
+	const last = ar9[ar9.length - 1];
+	document.querySelector('.out-9').textContent = last;
 }
 
 document.querySelector('.b-9').onclick = f9;
