@@ -267,7 +267,13 @@ document.querySelector('.b-14').onclick = f14;
 let ar15 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
 
 function f15() {
-
+	let out = '';
+	for (let i = 0; i < ar15.length; i++) {
+		if (ar15[i] > 0) {
+			out += ar15[i] + ' ';
+		}
+	}
+	document.querySelector('.out-15').textContent = out;
 }
 
 document.querySelector('.b-15').onclick = f15;
@@ -283,9 +289,49 @@ let ar16_odd = [];
 let ar16_even = [];
 
 function f16() {
-
+	let out1 = 'odd: ';
+	let out2 = 'even: ';
+	let i1 = 0;
+	let i2 = 0;
+	for (let i = 0; i < ar16.length; i++) {
+		if (ar16[i] % 2) {
+			ar16_odd[i1] = ar16[i];
+			i1++;
+		}
+		else {
+			ar16_even[i2] = ar16[i];
+			i2++;
+		}
+	}
+	for (let i = 0; i < ar16_odd.length; i++) {
+		out1 += ar16_odd[i] + ' ';
+	}
+	for (let i = 0; i < ar16_even.length; i++) {
+		out2 += ar16_even[i] + ' ';
+	}
+	document.querySelector('.out-16-odd').textContent = out1;
+	document.querySelector('.out-16-even').innerHTML = out2;
 }
-
+// function f16() {
+// 	let out1 = 'odd: ';
+// 	let out2 = 'even: ';
+// 	let i1 = 0;
+// 	let i2 = 0;
+// 	for (let i = 0; i < ar16.length; i++) {
+// 		if (ar16[i] % 2) {
+// 			ar16_odd[i1] = ar16[i];
+// 			out1 += ar16_odd[i1] + ' ';
+// 			i1++;
+// 		}
+// 		else {
+// 			ar16_even[i2] = ar16[i];
+// 			out2 += ar16_even[i2] + ' ';
+// 			i2++;
+// 		}
+// 	}
+// 	document.querySelector('.out-16-odd').textContent = out1;
+// 	document.querySelector('.out-16-even').innerHTML = out2;
+// }
 document.querySelector('.b-16').onclick = f16;
 
 // Task 17
