@@ -225,7 +225,11 @@ document.querySelector('.b-12').onclick = f12;
 let ar13 = ['test', 'west', 'list', 'class', 'best'];
 
 function f13() {
-
+	let out = '';
+	for (let i = 0; i < ar13.length; i++) {
+		out += i + ' ' + ar13[i] + ' ';
+	}
+	document.querySelector('.out-13').textContent = out;
 }
 
 document.querySelector('.b-13').onclick = f13;
@@ -240,10 +244,19 @@ document.querySelector('.b-13').onclick = f13;
 let ar14 = [1, 2, 3, 'hello', 66];
 
 function f14() {
-
+	let out = '';
+	let i = ar14.length - 1;
+	while (i >= 0) {
+		out += ar14[i] + ' ';
+		i--
+	}
+	document.querySelector('.out-14').textContent = out;
 }
 
 document.querySelector('.b-14').onclick = f14;
+// for (let i = ar14[ar14.length - 1]; i >= 0; i--) {
+// 	out += ar14[i] + ' ';
+// }
 
 // Task 15
 // Используя цикл выведите на страницу элементы массива ar15, которые больше нуля. Разделитель - пробел.
