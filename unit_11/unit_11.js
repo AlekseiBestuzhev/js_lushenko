@@ -141,7 +141,11 @@ document.querySelector('.b-8').onclick = f8;
 let d9 = [100, 200, 300, 400, 700, 121];
 
 function f9() {
-
+	const ar = [];
+	for (let i = 1; i < d9.length; i++) {
+		ar[i - 1] = d9[i];
+	}
+	d9 = ar;
 	showArr('.out-9', d9);
 }
 
