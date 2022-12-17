@@ -107,10 +107,29 @@ document.querySelector('.b-7').onclick = f7;
 let d8 = [2, '4', 12, 67, 'hello'];
 
 function f8() {
-
+	const inp = document.querySelector('.i-8').value;
+	let pv;
+	let cv;
+	for (let i = 0; i < d8.length; i++) {
+		if (i == 0) {
+			pv = d8[0];
+			d8[0] = inp;
+		}
+		else {
+			cv = d8[i];
+			d8[i] = pv;
+			pv = cv;
+		}
+	}
+	d8[d8.length] = pv;
+	console.log(d8);
 	showArr('.out-8', d8);
 }
-
+// else {
+// 	cv = d8[i];
+// 	d8[i] = fv;
+// 	fv = cv;
+// }
 document.querySelector('.b-8').onclick = f8;
 
 // Task 9
