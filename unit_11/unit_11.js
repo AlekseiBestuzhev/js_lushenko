@@ -176,7 +176,8 @@ document.querySelector('.b-10').onclick = f10;
 let d11 = [2, 3, 4, 5, 6, 7];
 
 function f11() {
-
+	const a = +document.querySelector('.i-11').value;
+	document.querySelector('.out-11').textContent = d11.indexOf(a);
 }
 
 document.querySelector('.b-11').onclick = f11;
