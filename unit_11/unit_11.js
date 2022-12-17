@@ -189,7 +189,19 @@ document.querySelector('.b-11').onclick = f11;
 // Вывод - по нажатию кнопки b-12
 // Вывод в out-12
 
+let ar12 = [6, 62, 60, 70, 6, 5, 62, 6, 62];
 let d12 = [6, 62, 60, 70, 1, 5];
+function indOf(arr, item, from = 0) {
+	for (let i = from; i < arr.length; i++) {
+		if (arr[i] === item) {
+			return i;
+		}
+	}
+	return -1;
+}
+const result12 = indOf(ar12, 6, 5);
+console.log(ar12);
+console.log(result12);
 
 function f12() {
 	let out;
