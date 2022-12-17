@@ -306,9 +306,29 @@ let d171 = ['a', 'b', 'c', 'd'];
 let d172 = [1, 2, 3, 4, 5];
 
 function f17() {
+	for (let i = 0; i < d171.length; i++) {
+		d17[i] = d171[i];
+	}
+	for (let i = 0; i < d172.length; i++) {
+		d17[d17.length++] = d172[i];
+		console.log(d17);
+	}
 
 	showArr('.out-17', d17);
 }
+
+// function f17() {
+// 	for (let i = 0; i < d171.length; i++) {
+// 		d17[i] = d171[i];
+// 	}
+// 	let k = d17.length;
+// 	for (let i = 0; i < d172.length; i++) {
+// 		d17[k] = d172[i];
+// 		k++;
+// 	}
+// 	console.log(d17);
+// 	showArr('.out-17', d17);
+// }
 
 document.querySelector('.b-17').onclick = f17;
 
