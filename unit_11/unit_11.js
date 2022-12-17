@@ -207,7 +207,7 @@ function f12() {
 	let out;
 	const a = +document.querySelector('.i-12').value;
 	for (let i = 0; i < d12.length; i++) {
-		if (a == d12[i]) {
+		if (a === d12[i]) {
 			out = i;
 			break;
 		} else {
@@ -229,7 +229,13 @@ document.querySelector('.b-12').onclick = f12;
 let d13 = [6, 0, 22, 1, 4, 76];
 
 function f13() {
-
+	const newArray = [];
+	let k = 0;
+	for (let i = d13.length - 1; i >= 0; i--) {
+		newArray[k] = d13[i];
+		k++;
+	}
+	d13 = newArray;
 	showArr('.out-13', d13);
 }
 
