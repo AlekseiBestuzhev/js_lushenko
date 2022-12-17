@@ -251,7 +251,10 @@ document.querySelector('.b-13').onclick = f13;
 let d14 = [];
 
 function f14() {
-
+	const inp = +document.querySelector('.i-14').value;
+	for (let i = 0; i < inp; i++) {
+		d14.push(1);
+	}
 	showArr('.out-14', d14);
 }
 
