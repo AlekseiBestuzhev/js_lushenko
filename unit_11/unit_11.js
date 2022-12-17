@@ -192,7 +192,17 @@ document.querySelector('.b-11').onclick = f11;
 let d12 = [6, 62, 60, 70, 1, 5];
 
 function f12() {
-
+	let out;
+	const a = +document.querySelector('.i-12').value;
+	for (let i = 0; i < d12.length; i++) {
+		if (a == d12[i]) {
+			out = i;
+			break;
+		} else {
+			out = -1;
+		}
+	}
+	document.querySelector('.out-12').textContent = out;
 }
 
 document.querySelector('.b-12').onclick = f12;
