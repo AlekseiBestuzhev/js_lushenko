@@ -227,8 +227,38 @@ document.querySelector('.b-12').onclick = f12;
 let a13 = [];
 
 function f13() {
-
+	for (let i = 0; i < 8; i++) {
+		const arr = [];
+		for (let k = 0; k < 9; k++) {
+			if (i % 2 == 0) {
+				if (k % 2) arr.push(0);
+				else arr.push(1);
+			}
+			else {
+				if (k % 2) arr.push(1);
+				else arr.push(0);
+			}
+		}
+		a13[i] = arr;
+	}
+	console.log(a13);
 }
+// let freeValue = [];
+// for (let i = 0; i < 8; i++) {
+//   let emptyArr = [];
+//   for (let k = 0; k < 9; k++) {
+// 	 emptyArr.push(k);
+// 	 if (i % 2 == 0) {
+// 		(emptyArr[k] % 2 == 0) ? emptyArr[k] = 0 : emptyArr[k] = 1;
+// 	 }
+// 	 else {
+// 		(emptyArr[k] % 2 != 0) ? emptyArr[k] = 0 : emptyArr[k] = 1;
+// 	 }
+//   }
+//   freeValue.push(emptyArr);
+// }
+// a13 = freeValue;
+// console.log(a13);
 
 document.querySelector('.b-13').onclick = f13;
 
