@@ -293,11 +293,15 @@ let a15 = [
 	[1, 0],
 	[1, 0, 0, 0],
 	[3, 4, 5, 6, 7, 8],
-	[1, 2]
+	[1, 2, 2, 5, 6, 9, 7, 9]
 ];
 
 function f15() {
-
+	let maxLength = 0;
+	for (let i = 0; i < a15.length; i++) {
+		if (a15[i].length > maxLength) maxLength = a15[i].length;
+	}
+	document.querySelector('.out-15').textContent = maxLength;
 }
 
 document.querySelector('.b-15').onclick = f15;
