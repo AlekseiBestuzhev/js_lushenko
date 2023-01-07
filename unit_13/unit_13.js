@@ -70,8 +70,11 @@ let a4 = {
 	"mix": "mix"
 };
 function f4() {
-
-	// return out;
+	let out = '';
+	for (let key in a4) {
+		out += key + ' ' + a4[key] + '<br>';
+	}
+	return out;
 }
 
 document.querySelector('.b-4').onclick = () => {
