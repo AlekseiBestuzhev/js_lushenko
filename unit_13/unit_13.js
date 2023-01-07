@@ -116,7 +116,14 @@ let a6 = {
 };
 
 function f6() {
-
+	const inp1 = document.querySelector('.i-61').value;
+	const inp2 = document.querySelector('.i-62').value;
+	a6[inp1] = inp2;
+	let out = '';
+	for (let key in a6) {
+		out += `${key} : ${a6[key]} <br>`;
+	}
+	document.querySelector('.out-6').innerHTML = out;
 }
 
 document.querySelector('.b-6').onclick = f6;
