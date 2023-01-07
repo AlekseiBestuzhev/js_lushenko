@@ -26,8 +26,7 @@ function f2() {
 		"two": "mahai",
 		"five": "hi"
 	};
-
-	// return
+	return a2.five;
 }
 
 document.querySelector('.b-2').onclick = () => {
